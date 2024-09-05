@@ -1,1 +1,2 @@
-// No.of.Seats , length ,Breadth,temp,no.of.Screens,no.of.tables,working_hour,location,doors,facilities,windows,
+// No.of.Seats , length ,Breadth,temp,no.of.Screens,no.of.tables,working_hour,location,doors,facilities,windows,electricity_units_used,
+// E Commerce : Price,no.of.items,size,variety,ratings,discount,name,seller,date_of_manufacturing,Warranty_year,description,total_bought,category,manufacterur,s

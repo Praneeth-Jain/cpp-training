@@ -2,10 +2,10 @@
 #include <string>
 using namespace std;
 class Student{
-    public :
     string firstName,lastName,usn,branch,gender;
     int age;
 
+    public :
     Student(){
         cout<<"Student Object is created \n\n";
     }
@@ -27,6 +27,7 @@ class Student{
         cout<<firstName<<" "<<lastName<<"\t"<<usn<<"\t"<<branch<<"\t"<<gender<<"\t"<<age;
     }
 };
+
 
 int main(){
     Student st;

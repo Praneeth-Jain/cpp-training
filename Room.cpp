@@ -1,0 +1,1 @@
+// No.of.Seats , length ,Breadth,temp,no.of.Screens,no.of.tables,working_hour,location,doors,facilities,windows,

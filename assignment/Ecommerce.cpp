@@ -63,6 +63,7 @@ int main(){
     while(auth_choice!=3){
         cout<<"\n\n 1.Login \n2.Create Account  \nEnter your Choice";
         cin>>auth_choice;
+        Customers c;
         switch(auth_choice){
             case 1:
             cout<<"\n\n Login Menu \n\n";
@@ -73,25 +74,24 @@ int main(){
                 cout<<"\n Enter Your id and password  : ";
                 cin>>log_id>>log_pass;
                 if(log_id==1&&log_pass==1221){
-                    Customers c(log_id,log_pass);
+                    Customers d(log_id,log_pass);
                 }
                 else{
                     cout<<"\nThe id and pass details are incorrect\n";
                 }
                 break;
-                // case 2:Customers c;
-                // c.createAcc();
-                // c.myAcc();
-                // break;
+                case 2:
+                c.createAcc();
+                c.myAcc();
+                break;
                 default:break;
             }
-            case 2:Customers c;
+            case 2:
             c.createAcc();
             c.myAcc();
 
     
-            default:
-                break;
+            default:break;
             }
         }
     }

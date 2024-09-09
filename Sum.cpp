@@ -10,6 +10,7 @@ int main() {
     sum = first_number + second_number;
 
     cout << first_number << " + " << second_number << " = " << sum;
-
+    
+    cout<<"\n\nThank youu";
     return 0;
 }

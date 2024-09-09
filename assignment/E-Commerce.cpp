@@ -262,46 +262,46 @@ public:
     }
 
     void createUserAccount() {
-        std::string uname, pwd;
+        string uname, pwd;
 
-        std::cout << "Enter username: ";
-        std::cin >> uname;
-        std::cout << "Enter password: ";
-        std::cin >> pwd;
+        cout << "Enter username: ";
+        cin >> uname;
+        cout << "Enter password: ";
+        cin >> pwd;
 
         users.push_back(User(uname, pwd));
-        std::cout << "User account created successfully!\n";
+        cout << "User account created successfully!\n";
     }
 
     User* loginUser() {
-        std::string uname, pwd;
-        std::cout << "Enter username: ";
-        std::cin >> uname;
-        std::cout << "Enter password: ";
-        std::cin >> pwd;
+        string uname, pwd;
+        cout << "Enter username: ";
+        cin >> uname;
+        cout << "Enter password: ";
+        cin >> pwd;
 
         for (auto& user : users) {
             if (user.getUsername() == uname && user.checkPassword(pwd)) {
-                std::cout << "Login successful!\n";
+                cout << "Login successful!\n";
                 return &user;
             }
         }
-        std::cout << "Invalid credentials!\n";
+        cout << "Invalid credentials!\n";
         return nullptr;
     }
 };
 
 int main() {
     ApplicationManager appManager;
-    std::string adminUsername = "admin";
-    std::string adminPassword = "admin123";
+    string adminUsername = "admin";
+    string adminPassword = "admin123";
     int choice;
 
     do {
-        std::cout << "\nE-Commerce Application\n";
-        std::cout << "1. Admin Login\n2. User Login\n3. Create User Account\n4. Exit\n";
-        std::cout << "Enter choice: ";
-        std::cin >> choice;
+        cout << "\nE-Commerce Application\n";
+        cout << "1. Admin Login\n2. User Login\n3. Create User Account\n4. Exit\n";
+        cout << "Enter choice: ";
+        cin >> choice;
 
         switch (choice) {
         case 1: {
